@@ -368,190 +368,192 @@ const BoardsSelector = () => {
         </div>
       </div>
 
-{/* Registration Form */}
-<div className="max-w-5xl mx-auto bg-white mt-12 p-10 rounded-lg shadow-lg">
-  <h2 className="text-3xl font-bold text-main-green mb-10 text-center">
-    Registration Form
-  </h2>
+      {/* Registration Form */}
+      <div className="max-w-5xl mx-auto bg-white mt-12 p-10 rounded-lg shadow-lg">
+        <h2 className="text-3xl font-bold text-main-green mb-10 text-center">
+          Registration Form
+        </h2>
 
-  <form>
-    {/* Row 1: Full Name and Email */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-      <div>
-        <label className="block text-lg font-semibold text-gray-600 mb-2">
-          Full Name
-        </label>
-        <input
-          type="text"
-          placeholder="First Name, Last Name"
-          className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
-          required
-        />
-      </div>
-      <div>
-        <label className="block text-lg font-semibold text-gray-600 mb-2">
-          Email Address
-        </label>
-        <input
-          type="email"
-          placeholder="Enter your email"
-          className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
-          required
-        />
-      </div>
-    </div>
+        <form>
+          {/* Row 1: Full Name and Email */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label className="block text-lg font-semibold text-gray-600 mb-2">
+                Full Name
+              </label>
+              <input
+                type="text"
+                placeholder="First Name, Last Name"
+                className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-lg font-semibold text-gray-600 mb-2">
+                Email Address
+              </label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
+                required
+              />
+            </div>
+          </div>
 
-    {/* Row 2: Confirm Email and Phone Number */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-      <div>
-        <label className="block text-lg font-semibold text-gray-600 mb-2">
-          Confirm Email Address
-        </label>
-        <input
-          type="email"
-          placeholder="Confirm your email"
-          className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
-          required
-        />
-      </div>
-      <div>
-        <label className="block text-lg font-semibold text-gray-600 mb-2">
-          Phone Number (Optional)
-        </label>
-        <input
-          type="text"
-          placeholder="Enter your phone number"
-          className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
-        />
-      </div>
-    </div>
+          {/* Row 2: Confirm Email and Phone Number */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label className="block text-lg font-semibold text-gray-600 mb-2">
+                Confirm Email Address
+              </label>
+              <input
+                type="email"
+                placeholder="Confirm your email"
+                className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
+                required
+              />
+            </div>
+            <div>
+              <label className="block text-lg font-semibold text-gray-600 mb-2">
+                Phone Number (Optional)
+              </label>
+              <input
+                type="text"
+                placeholder="Enter your phone number"
+                className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
+              />
+            </div>
+          </div>
 
-    {/* Row 3: Choose a Program and Board */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-      <div>
-        <label className="block text-lg font-semibold text-gray-600 mb-2">
-          Choose a Subject
-        </label>
-        <select className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green">
-          <option value="">Select a Subject</option>
-          <option value="ai-certification">AI Certification</option>
-          <option value="data-science">Data Science</option>
-          <option value="cyber-security">Cyber Security</option>
-        </select>
-      </div>
-      <div>
-        <label className="block text-lg font-semibold text-gray-600 mb-2">
-          Choose a Board
-        </label>
-        <input
-          type="text"
-          value={decodeURIComponent(boardName)} // Pre-populated
-          readOnly
-          className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
-        />
-      </div>
-    </div>
+          {/* Row 3: Choose a Program and Board */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label className="block text-lg font-semibold text-gray-600 mb-2">
+                Choose a Subject
+              </label>
+              <select className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green">
+                <option value="">Select a Subject</option>
+                <option value="ai-certification">AI Certification</option>
+                <option value="data-science">Data Science</option>
+                <option value="cyber-security">Cyber Security</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-lg font-semibold text-gray-600 mb-2">
+                Choose a Board
+              </label>
+              <input
+                type="text"
+                value={decodeURIComponent(boardName)} // Pre-populated
+                readOnly
+                className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
+              />
+            </div>
+          </div>
 
-    {/* Row 4: Education Level and Country */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-      <div>
-        <label className="block text-lg font-semibold text-gray-600 mb-2">
-          Education Level
-        </label>
-        <select className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green">
-          <option value="">Select Education Level</option>
-          <option value="high-school">High School</option>
-          <option value="undergraduate">Undergraduate</option>
-          <option value="postgraduate">Postgraduate</option>
-          <option value="phd">Ph.D.</option>
-        </select>
+          {/* Row 4: Education Level and Country */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label className="block text-lg font-semibold text-gray-600 mb-2">
+                Education Level
+              </label>
+              <select className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green">
+                <option value="">Select Education Level</option>
+                <option value="high-school">High School</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="postgraduate">Postgraduate</option>
+                <option value="phd">Ph.D.</option>
+              </select>
+            </div>
+            <div>
+              <label className="block text-lg font-semibold text-gray-600 mb-2">
+                Country/Location
+              </label>
+              <select className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green">
+                <option value="">Select Country</option>
+                <option value="pakistan">Pakistan</option>
+                <option value="india">India</option>
+                <option value="usa">USA</option>
+                <option value="uk">UK</option>
+              </select>
+            </div>
+          </div>
+
+          {/* Row 5: Exam Mode and Password */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <div>
+              <label className="block text-lg font-semibold text-gray-600 mb-2">
+                Preferred Exam Mode
+              </label>
+              <div className="flex items-center gap-4">
+                <label className="inline-flex items-center">
+                  <input
+                    type="radio"
+                    name="exam_mode"
+                    value="online"
+                    className="form-radio"
+                    required
+                  />
+                  <span className="ml-2">Online</span>
+                </label>
+                <label className="inline-flex items-center">
+                  <input
+                    type="radio"
+                    name="exam_mode"
+                    value="in-person"
+                    className="form-radio"
+                  />
+                  <span className="ml-2">In-Person</span>
+                </label>
+              </div>
+            </div>
+            <div className="flex flex-col md:flex-row gap-6">
+              <input
+                type="password"
+                placeholder="Create Password"
+                className="flex-1 p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
+                required
+              />
+              <input
+                type="password"
+                placeholder="Confirm Password"
+                className="flex-1 p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
+                required
+              />
+            </div>
+          </div>
+
+          {/* Agree to Terms */}
+          <div className="mb-6">
+            <label className="inline-flex items-center">
+              <input type="checkbox" className="form-checkbox" required />
+              <span className="ml-2">
+                I agree to the{" "}
+                <a href="#" className="text-main-green underline">
+                  Terms and Conditions
+                </a>
+              </span>
+            </label>
+          </div>
+
+          {/* Submit Button */}
+          <button className="w-full py-4 bg-main-green text-white font-bold rounded-lg hover:bg-accent-blue transition-all">
+            Register Now
+          </button>
+        </form>
+
+        <p className="text-center text-gray-600 mt-4">
+          Need help? Contact us at{" "}
+          <a
+            href="mailto:support@aibx.com"
+            className="text-main-green underline"
+          >
+            support@aibx.com
+          </a>{" "}
+          or chat with us live.
+        </p>
       </div>
-      <div>
-        <label className="block text-lg font-semibold text-gray-600 mb-2">
-          Country/Location
-        </label>
-        <select className="w-full p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green">
-          <option value="">Select Country</option>
-          <option value="pakistan">Pakistan</option>
-          <option value="india">India</option>
-          <option value="usa">USA</option>
-          <option value="uk">UK</option>
-        </select>
-      </div>
-    </div>
-
-    {/* Row 5: Exam Mode and Password */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-      <div>
-        <label className="block text-lg font-semibold text-gray-600 mb-2">
-          Preferred Exam Mode
-        </label>
-        <div className="flex items-center gap-4">
-          <label className="inline-flex items-center">
-            <input
-              type="radio"
-              name="exam_mode"
-              value="online"
-              className="form-radio"
-              required
-            />
-            <span className="ml-2">Online</span>
-          </label>
-          <label className="inline-flex items-center">
-            <input
-              type="radio"
-              name="exam_mode"
-              value="in-person"
-              className="form-radio"
-            />
-            <span className="ml-2">In-Person</span>
-          </label>
-        </div>
-      </div>
-      <div className="flex flex-col md:flex-row gap-6">
-        <input
-          type="password"
-          placeholder="Create Password"
-          className="flex-1 p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
-          required
-        />
-        <input
-          type="password"
-          placeholder="Confirm Password"
-          className="flex-1 p-4 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-main-green"
-          required
-        />
-      </div>
-    </div>
-
-    {/* Agree to Terms */}
-    <div className="mb-6">
-      <label className="inline-flex items-center">
-        <input type="checkbox" className="form-checkbox" required />
-        <span className="ml-2">
-          I agree to the{" "}
-          <a href="#" className="text-main-green underline">
-            Terms and Conditions
-          </a>
-        </span>
-      </label>
-    </div>
-
-    {/* Submit Button */}
-    <button className="w-full py-4 bg-main-green text-white font-bold rounded-lg hover:bg-accent-blue transition-all">
-      Register Now
-    </button>
-  </form>
-
-  <p className="text-center text-gray-600 mt-4">
-    Need help? Contact us at{" "}
-    <a href="mailto:support@aibx.com" className="text-main-green underline">
-      support@aibx.com
-    </a>{" "}
-    or chat with us live.
-  </p>
-</div>
-
 
       {/* Content Sections */}
       <div className="max-w-7xl mx-auto mt-12 space-y-16 px-6 md:px-8 lg:px-12">

@@ -15,7 +15,8 @@ const Home = () => {
             <h1 className="text-3xl mt-4 sm:text-4xl md:text-5xl lg:text-5xl font-extrabold font-barlow uppercase leading-snug sm:leading-tight">
               The World’s First
               <span className="text-main-green">
-                &nbsp;Artificial <br/>Intelligence
+                &nbsp;Artificial <br />
+                Intelligence
               </span>{" "}
               Boards OF Examination
             </h1>
@@ -30,7 +31,6 @@ const Home = () => {
               >
                 Start Your Journey Today
               </Link>
-  
             </div>
           </div>
         </div>
@@ -38,6 +38,9 @@ const Home = () => {
 
       <section className="bg-main-green py-12 px-6 sm:px-12 lg:px-16 mt-12">
         <div className="text-center">
+          <h2 className="text-4xl sm:text-5xl font-barlow font-extrabold text-white mb-6">
+            Ours Boards
+          </h2>
           <h2 className="text-4xl sm:text-5xl font-barlow font-extrabold text-main-dark mb-12">
             Comprehensive List of AI Boards of Examination
           </h2>
@@ -136,30 +139,125 @@ const Home = () => {
         </div>
       </section>
 
-      {/* NFT Certification Section */}
+ 
       <section className="bg-main-light py-16 px-6 sm:px-12 lg:px-16">
-        <div className="max-w-screen-xl mx-auto text-center">
-          <h2 className="text-4xl sm:text-5xl font-barlow font-extrabold text-main-dark mb-6">
-            Certifications & Degrees: From Grade 1 to PhD
-          </h2>
-          <p className="text-lg font-aeonik text-text-color">
-            At AIBX, we redefine education by offering a seamless, modular
-            pathway from foundational learning to advanced degrees. Whether
-            you're just starting your academic journey or seeking to master a
-            specialized field, our programs are designed to fit your pace,
-            aspirations, and the demands of the future.
+  <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 text-center">
+    {/* First Section */}
+    <div>
+      <h2 className="text-4xl sm:text-5xl font-barlow font-extrabold text-main-dark mb-6">
+        Certifications & Degrees
+      </h2>
+      <p className="text-lg font-aeonik text-text-color">
+        At AIBX, we redefine education by offering a seamless, modular
+        pathway from foundational learning to advanced degrees. Whether
+        you're just starting your academic journey or seeking to master a
+        specialized field, our programs are designed to fit your pace,
+        aspirations, and the demands of the future.
+      </p>
+      <Link
+        to="/nft-certifications"
+        className="mt-8 inline-block bg-main-green text-main-dark px-6 py-3 rounded-lg text-lg font-bold shadow-lg hover:bg-accent-blue hover:text-main-light transition-all duration-300"
+      >
+        Learn More
+      </Link>
+    </div>
+
+    {/* Second Section */}
+    <div>
+      <h2 className="text-4xl sm:text-5xl font-barlow font-extrabold text-main-dark mb-6">
+        Our Institutions
+      </h2>
+      <p className="text-lg font-aeonik text-text-color">
+        At AIBX, we redefine education by offering a seamless, modular
+        pathway from foundational learning to advanced degrees. Whether
+        you're just starting your academic journey or seeking to master a
+        specialized field, our programs are designed to fit your pace,
+        aspirations, and the demands of the future.
+      </p>
+      <Link
+        to="/our-institutions"
+        className="mt-8 inline-block bg-main-green text-main-dark px-6 py-3 rounded-lg text-lg font-bold shadow-lg hover:bg-accent-blue hover:text-main-light transition-all duration-300"
+      >
+        Learn More
+      </Link>
+    </div>
+  </div>
+</section>
+
+
+      <div className="homepage">
+        <header className="hero_image flex flex-col items-center justify-center text-center bg-gradient-to-r from-main-light to-main-green py-20">
+          <h1 className="text-main-dark font-aeonik text-5xl drop-shadow-md">
+            AIBX Certifications: Where Excellence Meets Opportunity
+          </h1>
+          <p className="text-text-color font-barlow text-lg mt-4 max-w-2xl">
+            Only the Top 10% Earn Blockchain-Powered Global Recognition
           </p>
-          <Link
-            to="/nft-certifications"
-            className="mt-8 inline-block bg-main-green text-main-dark px-6 py-3 rounded-lg text-lg font-bold shadow-lg hover:bg-accent-blue hover:text-main-light transition-all duration-300"
-          >
-            Learn More
-          </Link>
-        </div>
-      </section>
+
+          <p className="text-main-dark font-aeonik text-xl text-center leading-relaxed max-w-4xl mx-auto mt-10">
+            At AIBX, we redefine what it means to succeed. Our certifications
+            are not just about passing an exam—they are your gateway to global
+            recognition, prestigious opportunities, and a future of
+            possibilities. Only the top 10% receive blockchain-secured
+            certifications, ensuring you stand out in the world.
+          </p>
+
+          <section className="p-3 rounded-lg mx-4 md:mx-20">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
+              <div className="card p-8 bg-gradient-to-b from-main-light to-white text-center shadow-lg hover:shadow-xl rounded-lg transition-transform transform hover:scale-105">
+                <h3 className="text-accent-blue text-2xl font-aeonik mb-4">
+                  Top 1%: The Elite Circle
+                </h3>
+                <p className="text-text-color mb-6 leading-relaxed">
+                  Proof of unmatched skills, global summits, leadership events,
+                  and Hall of Fame recognition await you.
+                </p>
+                <Link
+                  to="/elite-circle"
+                  className="btn mt-4 py-2 px-6 bg-accent-blue text-white rounded-full shadow hover:bg-main-dark transition"
+                >
+                  Learn More
+                </Link>
+              </div>
+
+              <div className="card p-8 bg-gradient-to-b from-main-light to-white text-center shadow-lg hover:shadow-xl rounded-lg transition-transform transform hover:scale-105">
+                <h3 className="text-accent-blue text-2xl font-aeonik mb-4">
+                  Top 5%: Excellence Achievers
+                </h3>
+                <p className="text-text-color mb-6 leading-relaxed">
+                  Exclusive networking, global NFT certification, and
+                  preferential visibility for top opportunities.
+                </p>
+                <Link
+                  to="/excellence-achievers"
+                  className="btn mt-4 py-2 px-6 bg-accent-blue text-white rounded-full shadow hover:bg-main-dark transition"
+                >
+                  Learn More
+                </Link>
+              </div>
+
+              <div className="card p-8 bg-gradient-to-b from-main-light to-white text-center shadow-lg hover:shadow-xl rounded-lg transition-transform transform hover:scale-105">
+                <h3 className="text-accent-blue text-2xl font-aeonik mb-4">
+                  Top 10%: Distinguished Achievers
+                </h3>
+                <p className="text-text-color mb-6 leading-relaxed">
+                  Prestige badges, personalized job guidance, and pathways to
+                  advanced AIBX programs.
+                </p>
+                <Link
+                  to="/distinguished-achievers"
+                  className="btn mt-4 py-2 px-6 bg-accent-blue text-white rounded-full shadow hover:bg-main-dark transition"
+                >
+                  Learn More
+                </Link>
+              </div>
+            </div>
+          </section>
+        </header>
+      </div>
 
       {/* How It Works Section */}
-      <section className="bg-main-green py-16 px-6 sm:px-12 lg:px-16">
+      <section className="bg-main-green py-16 px-6 mt-12 sm:px-12 lg:px-16">
         <div className="text-center">
           <h2 className="text-4xl sm:text-5xl font-barlow font-extrabold text-main-dark mb-6">
             NFT-Based

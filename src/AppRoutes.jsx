@@ -23,6 +23,7 @@ import HowItWork from "./pages/HowItWork";
 import NftCertification from "./pages/NftCertification";
 import AllBoardsPage from "./pages/AllBoardsPage";
 import BoardsSelector from "./pages/BoardsSelector";
+import OurInstitution from "./pages/OurInstitution";
 
 const AppRoutes = () => {
   return (
@@ -39,6 +40,7 @@ const AppRoutes = () => {
         <Route path="/boardselector" element={<BoardSelector />} />
         <Route path="/howitwork" element={<HowItWork />} />
         <Route path="/nft-certifications" element={<NftCertification />} />
+        <Route path="/our-institutions" element={<OurInstitution />} />
 
         <Route path="/boardsselector" element={<BoardsSelector />} />
 
